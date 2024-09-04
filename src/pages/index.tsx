@@ -11,7 +11,18 @@ import {
   MonitorSmartphone,
   TrendingUp,
 } from "lucide-react";
-import { Code, Users, Server, Cloud, Zap, Lightbulb, Shield, Database, Monitor, Layers } from "lucide-react";
+import {
+  Code,
+  Users,
+  Server,
+  Cloud,
+  Zap,
+  Lightbulb,
+  Shield,
+  Database,
+  Monitor,
+  Layers,
+} from "lucide-react";
 
 import { TriangleDownIcon } from "@radix-ui/react-icons";
 import Spline from "@splinetool/react-spline";
@@ -39,19 +50,22 @@ const aboutStats = [
 const projects = [
   {
     title: "Sote Logistics Engineering",
-    description: "Successfully managed and delivered multiple engineering projects, enhancing the efficiency and reliability of payment systems for over 300,000 transactions monthly.",
+    description:
+      "Successfully managed and delivered multiple engineering projects, enhancing the efficiency and reliability of payment systems for over 300,000 transactions monthly.",
     image: "/assets/sote.png", // replace with actual image path
     href: "https://sote.com",
   },
   {
     title: "Maramoja Transport App",
-    description: "Led the development of the taxi hailing app, managing frontend and backend teams, ensuring seamless payments integration.",
+    description:
+      "Led the development of the taxi hailing app, managing frontend and backend teams, ensuring seamless payments integration.",
     image: "/assets/maramoja.png", // replace with actual image path
     href: "https://maramoja.co.ke/",
   },
   {
     title: "Sand Technologies Web Scraping",
-    description: "Developed a web scraping system with AWS and Node.js, automating data extraction and deployment for real-time updates.",
+    description:
+      "Developed a web scraping system with AWS and Node.js, automating data extraction and deployment for real-time updates.",
     image: "/assets/cardseer.webm", // replace with actual image path
     href: "https://www.cardseer.com/",
   },
@@ -129,7 +143,7 @@ const services = [
     description:
       "Optimizing application performance to ensure fast load times and smooth user experiences across all devices.",
     icon: TrendingUp,
-  }
+  },
 ];
 export default function Home() {
   const refScrollContainer = useRef(null);
@@ -231,7 +245,6 @@ export default function Home() {
               <span className={styles.pill}>DevOps</span>
               <span className={styles.pill}>Docker</span>
               <span className={styles.pill}>Terraform</span>
-
             </div>
             <div>
               <h1
@@ -254,7 +267,12 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                A seasoned software engineer with a rich blend of technical and leadership expertise, particularly in the realm of web and mobile application development. With over 8 years of hands-on experience in delivering robust and scalable software solutions, I have successfully managed and led cross-functional teams to achieve high-impact outcomes across various industries.
+                A seasoned software engineer with a rich blend of technical and
+                leadership expertise, particularly in the realm of web and
+                mobile application development. With over 8 years of hands-on
+                experience in delivering robust and scalable software solutions,
+                I have successfully managed and led cross-functional teams to
+                achieve high-impact outcomes across various industries.
               </p>
             </div>
             <span
@@ -308,18 +326,16 @@ export default function Home() {
           >
             <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
               I&apos;m an experienced full-stack developer proficient in{" "}
-              <Link
-                href="#"
-                target="_blank"
-                className="underline"
-              >
-                React, TypeScript, Node.js, Python, AWS (Lambda, S3, EC2, API Gateway, Cognito, ECR, SQS), GitLab CI/CD, Docker, PostgreSQL, MongoDB, MySQL, DynamoDB, Terraform
+              <Link href="#" target="_blank" className="underline">
+                React, TypeScript, Node.js, Python, AWS (Lambda, S3, EC2, API
+                Gateway, Cognito, ECR, SQS), GitLab CI/CD, Docker, PostgreSQL,
+                MongoDB, MySQL, DynamoDB, Terraform
               </Link>{" "}
-              My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
+              My experience spans from startups to mid-sized companies, where
+              I&apos;ve been instrumental in the entire product design process;
+              from ideation and wireframing, through prototyping, to the
+              delivery of the final product, all while efficiently collaborating
+              with cross-functional teams.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
