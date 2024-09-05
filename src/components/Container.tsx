@@ -120,11 +120,11 @@ export default function Container(props: ContainerProps) {
         <meta content={meta.description} name="description" />
         <meta
           property="og:url"
-          content={`https://www.skinyori.codes${router.asPath}`}
+          content={`https://skinyori.com${router.asPath}`}
         />
         <link
           rel="canonical"
-          href={`https://www.skinyori.codes${router.asPath}`}
+          href={`https://skinyori.com${router.asPath}`}
         />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="skinyori" />
@@ -174,7 +174,7 @@ export default function Container(props: ContainerProps) {
               href={link.href}
               text={link.text}
               i={i}
-              className="text-base"
+              className="text"
             />
           ))}
         </ul>

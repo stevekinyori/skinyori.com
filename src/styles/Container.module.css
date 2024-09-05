@@ -24,14 +24,16 @@
   @apply -translate-x-[50%] -translate-y-[50%] scale-0 transform opacity-0;
 }
 
-/* preloader */
 .introduction {
-  /* height: 100vh; */
+  height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
+  top: 0;
+  /* Ensure the preloader spans the entire viewport */
+  left: 0;
   z-index: 99;
   background-color: hsl(240 27.9% 5.7%);
 
@@ -51,6 +53,8 @@
     color: white;
     font-size: 42px;
     align-items: center;
+    justify-content: center;
+    /* Ensure the text centers inside the preloader */
     position: absolute;
     z-index: 1;
 

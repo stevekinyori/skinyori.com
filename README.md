@@ -2,9 +2,9 @@
 
 A sleek, modern, and responsive portfolio bootstrapped with [create-t3-app](https://create.t3.gg/).
 
-[Website Preview](https://www.skinyori.com)
+[Website Preview](https://skinyori.com)
 
-[🔗 Link to portfolio](https://www.skinyori.com)
+[🔗 Link to portfolio](https://skinyori.com)
 
 All you need to know about me, my projects and skills can be found here. Personalize the portfolio by modifying `src/pages/index.tsx` and `src/styles/globals.css` to emulate your own portfolio. Made some improvements and want to share? Open a pull request.
 For any issues, feel free to report them here.
@@ -52,4 +52,4 @@ Now, open your browser and navigate to `http://localhost:3000` to view your port
 
 ## How do I deploy this?
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+Follow the deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
