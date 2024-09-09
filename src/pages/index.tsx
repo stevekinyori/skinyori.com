@@ -52,21 +52,21 @@ const projects = [
     title: "Sote Logistics Engineering",
     description:
       "Successfully managed and delivered multiple engineering projects, enhancing the efficiency and reliability of payment systems for over 300,000 transactions monthly.",
-    image: "/assets/sote.png", 
+    image: "/assets/sote.png",
     href: "https://sote.com",
   },
   {
     title: "Maramoja Transport App",
     description:
       "Led the development of the taxi hailing app, managing frontend and backend teams, ensuring seamless payments integration.",
-    image: "/assets/maramoja.png", 
+    image: "/assets/maramoja.png",
     href: "https://maramoja.co.ke/",
   },
   {
     title: "Sand Technologies Web Scraping",
     description:
       "Developed a web scraping system with AWS and Node.js, automating data extraction and deployment for real-time updates.",
-    image: "/assets/cardseer.webm", 
+    image: "/assets/cardseer.webm",
     href: "https://www.cardseer.com/",
   },
   {
@@ -233,8 +233,9 @@ export default function Home() {
               data-scroll
               data-scroll-direction="horizontal"
               data-scroll-speed=".09"
-              className="flex flex-row items-center space-x-1.5"
+              className="flex flex-row items-center space-x-1.5 flex-nowrap overflow-x-auto scrollbar-hide px-2.5"
             >
+
               <span className={styles.pill}>React</span>
               <span className={styles.pill}>TypeScript</span>
               <span className={styles.pill}>Node.js</span>

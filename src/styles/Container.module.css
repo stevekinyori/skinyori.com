@@ -26,22 +26,28 @@
 
 .introduction {
   height: 100vh;
+  /* Ensure the preloader takes up the full viewport height */
   width: 100vw;
+  /* Ensure it takes the full viewport width */
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
   top: 0;
-  /* Ensure the preloader spans the entire viewport */
+  /* Make sure it's positioned at the top of the viewport */
   left: 0;
+  /* Align it to the left of the viewport */
   z-index: 99;
   background-color: hsl(240 27.9% 5.7%);
+  overflow: hidden;
+  /* Prevent content overflow on mobile */
 
   svg {
     position: absolute;
     top: 0;
     width: 100%;
     height: calc(100% + 300px);
+    /* Adjust for mobile scrolling and padding */
 
     path {
       fill: hsl(240 27.9% 5.7%);
@@ -54,9 +60,10 @@
     font-size: 42px;
     align-items: center;
     justify-content: center;
-    /* Ensure the text centers inside the preloader */
     position: absolute;
     z-index: 1;
+    text-align: center;
+    /* Center the text for smaller screens */
 
     span {
       display: block;
@@ -65,6 +72,13 @@
       background-color: white;
       border-radius: 50%;
       margin-right: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    p {
+      font-size: 24px;
+      /* Reduce the text size on mobile devices */
     }
   }
 }

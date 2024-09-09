@@ -229,13 +229,16 @@ export default function Container(props: ContainerProps) {
         </AnimatePresence>
         <style jsx global>{`
           html,
-          body {
-            overflow-y: ${isOpen ? "hidden" : "initial"};
-            scrollbar-width: ${isOpen ? "none" : "unset"};
-            -ms-overflow-style: ${isOpen ? "none" : "unset"};
-            touch-action: ${isOpen ? "none" : "unset"};
-            -ms-touch-action: ${isOpen ? "none" : "unset"};
-          }
+           body {
+    overflow-y: ${isOpen ? "hidden" : "initial"};
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    scrollbar-width: ${isOpen ? "none" : "unset"};
+    -ms-overflow-style: ${isOpen ? "none" : "unset"};
+    touch-action: ${isOpen ? "none" : "unset"};
+    -ms-touch-action: ${isOpen ? "none" : "unset"};
+    margin: 0;
+    padding: 0;
+  }
         `}</style>
       </nav>
 

@@ -121,3 +121,70 @@
     animation: blink 1s infinite;
   }
 }
+
+@media (max-width: 768px) {
+  .intro {
+    text-align: center;
+    padding: 20px;
+    /* Add padding to avoid edge-to-edge content */
+  }
+
+  h1 {
+    font-size: 2rem;
+    /* Reduce the font size for mobile */
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    /* Adjust the paragraph font size */
+    max-width: 100%;
+    /* Ensure it spans the width */
+    text-align: center;
+    /* Center the text on mobile */
+    padding: 0 20px;
+    /* Add padding to give space on mobile */
+  }
+
+  .pill {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    font-size: 0.875rem;
+    /* Adjust the size of the pills */
+  }
+
+  .container {
+    padding: 0 15px;
+    /* Add padding to the container */
+  }
+
+  #canvas-container {
+    height: auto;
+    /* Ensure canvas resizes properly */
+  }
+
+  .services div {
+    margin-bottom: 20px;
+    /* Space between service items */
+  }
+
+  .carousel-item {
+    width: 100%;
+    /* Make carousel items span the entire width */
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
